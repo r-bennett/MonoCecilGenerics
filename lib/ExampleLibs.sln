@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyWithConvolutedGenerics", "AssemblyWithConvolutedGenerics\AssemblyWithConvolutedGenerics.csproj", "{C75821CD-60F7-4978-954C-560EFD57EA34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyWithNestedType", "AssemblyWithNestedType\AssemblyWithNestedType.csproj", "{0FC5A6EA-3A8E-4316-A819-B6808170D17A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C75821CD-60F7-4978-954C-560EFD57EA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75821CD-60F7-4978-954C-560EFD57EA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75821CD-60F7-4978-954C-560EFD57EA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75821CD-60F7-4978-954C-560EFD57EA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC5A6EA-3A8E-4316-A819-B6808170D17A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC5A6EA-3A8E-4316-A819-B6808170D17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC5A6EA-3A8E-4316-A819-B6808170D17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC5A6EA-3A8E-4316-A819-B6808170D17A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
