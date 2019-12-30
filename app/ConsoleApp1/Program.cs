@@ -13,17 +13,17 @@ namespace ConsoleApp1
             var typeName = "ClassWithConvolutedGenerics`1";
 
             var module = ModuleDefinition.ReadModule(dllPath);
-            var serverProxyType = module.Types.Single(x => x.Name == typeName);
-            var serverProxyCtor = serverProxyType.GetConstructors().Single(x => x.HasParameters);
+            var classWithConvolutedGenericsType = module.Types.Single(x => x.Name == typeName);
+            var classWithConvolutedGenericsCtor = classWithConvolutedGenericsType.GetConstructors().Single(x => x.HasParameters);
 
-            var baseServiceRemotableTypeViaCtorParams = ((GenericInstanceType) serverProxyCtor.Parameters.Single().ParameterType)
+            var genericTypeViaCtorParams = ((GenericInstanceType) classWithConvolutedGenericsCtor.Parameters.Single().ParameterType)
                 .GenericArguments[1].DeclaringType;
-            PrintDetails(baseServiceRemotableTypeViaCtorParams);
+            PrintDetails(genericTypeViaCtorParams);
 
-            var baseServiceRemotableTypeViaClassConstraint = serverProxyType.GenericParameters.Single().Constraints.Single().ConstraintType;
-            PrintDetails(baseServiceRemotableTypeViaClassConstraint);
+            var genericTypeViaClassConstraint = classWithConvolutedGenericsType.GenericParameters.Single().Constraints.Single().ConstraintType;
+            PrintDetails(genericTypeViaClassConstraint);
 
-            PrintDetails(baseServiceRemotableTypeViaCtorParams);
+            PrintDetails(genericTypeViaCtorParams);
         }
 
         private static void PrintDetails(TypeReference type)
